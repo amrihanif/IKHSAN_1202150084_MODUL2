@@ -77,41 +77,54 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(view.getContext(), detailMenu.class);
+                String komposisi;
                 switch (position){
                     case 0:
                         intent.putExtra("menu", arrayListMenu.get(position));
                         intent.putExtra("price", arrayListsPrice.get(position));
                         intent.putExtra("image", gambar.get(position));
+                        komposisi = "Nasi, Kecap, Telur, Tomat, Cabe";
+                        intent.putExtra("komposisi", komposisi);
                         view.getContext().startActivity(intent);
                         break;
                     case 1:
                         intent.putExtra("menu", arrayListMenu.get(position));
                         intent.putExtra("price", arrayListsPrice.get(position));
                         intent.putExtra("image", gambar.get(position));
+                        komposisi = "Mie Goreng, Telur, Tomat, Cabe, Udang";
+                        intent.putExtra("komposisi", komposisi);
                         view.getContext().startActivity(intent);
                         break;
                     case 2:
                         intent.putExtra("menu", arrayListMenu.get(position));
                         intent.putExtra("price", arrayListsPrice.get(position));
                         intent.putExtra("image", gambar.get(position));
+                        komposisi = "Mie Kuah, Telur, Ayam, Tomat, Cabe";
+                        intent.putExtra("komposisi", komposisi);
                         view.getContext().startActivity(intent);
                         break;
                     case 3:
                         intent.putExtra("menu", arrayListMenu.get(position));
                         intent.putExtra("price", arrayListsPrice.get(position));
                         intent.putExtra("image", gambar.get(position));
+                        komposisi = "Daging, Kecap, Nasi, Cabe, Bawang";
+                        intent.putExtra("komposisi", komposisi);
                         view.getContext().startActivity(intent);
                         break;
                     case 4:
                         intent.putExtra("menu", arrayListMenu.get(position));
                         intent.putExtra("price", arrayListsPrice.get(position));
                         intent.putExtra("image", gambar.get(position));
+                        komposisi = "Mie Kuah, Beef";
+                        intent.putExtra("komposisi", komposisi);
                         view.getContext().startActivity(intent);
                         break;
                     case 5:
                         intent.putExtra("menu", arrayListMenu.get(position));
                         intent.putExtra("price", arrayListsPrice.get(position));
                         intent.putExtra("image", gambar.get(position));
+                        komposisi = "Nasi, Kecap, Telur, Tomat, Cabe, Bawang, Sayur";
+                        intent.putExtra("komposisi", komposisi);
                         view.getContext().startActivity(intent);
                         break;
                 }
